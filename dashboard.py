@@ -6,7 +6,7 @@ st.sidebar.image("Assets/nba.png", width=200)
 st.title('DashBoard da Análise dos Dados Da NBA')
 st.set_page_config(layout="wide")
 
-df = pd.read_csv('NBAcompleto.csv')
+df = pd.read_csv('Dataset/NBAcompleto.csv')
 
 team = st.sidebar.selectbox("Team", df['Team'].unique())
 df_filtro = df[df['Team'] == team]
